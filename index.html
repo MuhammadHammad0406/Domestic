@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOMESTIC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Images/Domestic Logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-lg bg-body  fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="logo-style">DOMES</span>TIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Team">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <script>document.write(localStorage.getItem("name1"))</script>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" onclick="logout()" href="login.html">LOG OUT</a>
+                    </li>
+                    <div class="cartcontainer">
+                        <div class="addtocartcontainer">
+                            <div class="carttog" onclick="cardtog()">
+                                <i class="bi bi-cart-check"></i>
+                                <span class="cartcount">0</span>
+                            </div>
+                        </div>
+                        <div class="cartdetailes">
+                            <div class="additem"></div>
+                            <div class="totalcontainer ps-5">TOTAL<i class="bi bi-currency-dollar"></i><span>0</span>/-
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER SECTION -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/home-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>YOUR DREAM HOUSE</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate <br> quibusdam itaque
+                        facilis quam a.</p>
+                    <a href="" class="btn ">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/home-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ALWAYS DEDICATED</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis <br> quibusdam laboriosam et
+                        ratione laudantium?</p>
+                    <a href="" class="btn ">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/home-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TRUE CONSTRUCTION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio <br> rerum voluptatum dicta et
+                        minus.</p>
+                    <a href="" class="btn ">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-image">
+                        <img src="Images/about.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 mt-5">
+                    <div class="about-text">
+                        <h2>We Provide The Best Quality Services Ever</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, asperiores? Ipsa aut,
+                            dignissimos ullam architecto enim modi iusto amet harum earum dolores id quaerat ex eius,
+                            tempore ea vitae, asperiores quia saepe deserunt accusamus voluptatibus consectetur
+                            veritatis. Asperiores ea officiis dolorum nostrum, vero qui reiciendis aliquid magnam iusto,
+                            doloribus mollitia.</p>
+                        <a href="" class="btn ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section id="services" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="services-text text-center">
+                        <h2>Our Services</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Repudiandae, cupiditate!</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col md-12 col-12">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="bi bi-laptop"></i>
+                            <h5 class="card-title">Best Quality</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+                                illum sequi nihil autem aspernatur deleniti dolor distinctio rerum similique commodi.
+                            </p>
+                            <a href="" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col md-12 col-12">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="bi bi-journal"></i>
+                            <h5 class="card-title">Sustainability</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, excepturi.
+                                Dolores nobis modi quas? Magni, quisquam iste! Ducimus, eum rem.</p>
+                            <a href="" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col md-12 col-12">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="bi bi-front"></i>
+                            <h5 class="card-title">Integrity</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in illo
+                                repellat eos officia tempora ut veritatis similique maiores nobis.</p>
+                            <a href="" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section id="portfolio" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="services-text text-center">
+                        <h2>Our Projects</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit <br> Consequatur, libero?</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/project-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Building Make</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum optio
+                                odit reiciendis. Similique facilis iste provident dolorem earum accusantium iusto?</p>
+                            <a href="" class="btn ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/project-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Building Make</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                dolor illum alias quis deleniti eius placeat totam, odit vel nemo?</p>
+                            <a href="" class="btn ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/project-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Building Make</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                                voluptatum aspernatur enim sunt facilis est neque eveniet nihil praesentium libero?</p>
+                            <a href="" class="btn ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+
+    <section id="product" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="services-text text-center">
+                        <h2>Our Products</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Repudiandae, cupiditate!</p>
+                    </div>
+                </div>
+
+                <div class="productcard col-lg-12 col-md-12 col-12"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+
+    <section id="Team" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="services-text text-center">
+                        <h2>Our Team</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Beatae dolore cum alias aliquam.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/team-1.jpg" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jack Wilson</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et harum
+                                voluptatum quasi fuga consectetur officia.</p>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/team-2.jpg" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Donald Bren</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                libero soluta voluptas a sed praesentium.</p>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/team-3.jpg" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Laura McKay</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum odit
+                                eum, error quo minima perferendis.</p>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card text-center">
+                        <img src="Images/team-4.jpg" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Amanza Smith</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, saepe!
+                                Sequi et iste reiciendis quod.</p>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="services-text text-center">
+                        <h2>Contact Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Ullam beatae qui illum harum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12">
+                    <form action="index.html" onsubmit="return validation()">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                                placeholder="Full Name">
+                            <small id="nameerror" class="form-text text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Email">
+                            <small id="emailerror" class="form-text text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="text" class="form-control" id="address" aria-describedby="emailHelp"
+                                placeholder="Address">
+                            <small id="addresserror" class="form-text text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="text" class="form-control" id="phone" aria-describedby="emailHelp"
+                                placeholder="Phone Number">
+                            <small id="phoneerror" class="form-text text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <textarea name="" class="form-control" id="message" cols="30" rows="10"
+                                placeholder="Message"></textarea>
+                            <small id="messageerror" class="form-text text-danger"></small>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-lg">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+
+    <section id="map" class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <iframe class="border-0"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8608.361048350938!2d67.1683928543961!3d24.885358791239586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1696593569540!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <section id="footer" class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 bg-body fw-semibold  text-secondary text-center pt-3 rounded">
+                    <p><a href="" class="text-dark"><span class="logo-style">DOMES</span>TIC</a> | &copy; 2023 All
+                        Rights
+                        Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
